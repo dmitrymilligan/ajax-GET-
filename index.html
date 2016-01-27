@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax GET</title>
+</head>
+<body>
+	<form id="form" action="" method="POST" onsubmit="return false">
+  <input type="text" name="name" placeholder="Name" required pattern="^[а-яА-ЯёЁa-zA-Z]+$"><br>
+  <input type="tel" name="phone" placeholder="Phone" required pattern="[0-9]{3}"><br>
+  <select name="car" id="">
+    <option value="NO">No car</option>
+        <option disabled></option>
+    <option value="Truck">Truck</option>
+    <option value="Sedan">Sedan</option>
+    <option value="Pickup">Pickup</option>
+    <option value="Minivan">Minivan</option>
+    <option value="Moto">Moto</option>
+  </select><br>
+  <input type="submit">
+</form>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="script.js"></script>
+</html>
