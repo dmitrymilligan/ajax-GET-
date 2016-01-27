@@ -22,7 +22,8 @@ $(function () {
 		}).fail(function () {
 			alert("FAIL")
 		}).done(function (data) {
-			alert(data);
-		});
+			for(var a in data)
+	 		$(".one").append(data[a] + ": " + data + "<br>" );
+	 		});
 	}
 });
