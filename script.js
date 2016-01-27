@@ -1,10 +1,10 @@
 $(function () {
 
 	$(document).on("submit", "form", function () {
-		var name  	= $("input[name='name']").val(),
-			phone 	= $("input[name='phone']").val(),
-			car     = $("select[name='car']").val(),
-			pattern = /[0-9]{3}/;
+		var name    = $("input[name='name']").val(),
+		    phone   = $("input[name='phone']").val(),
+		    car     = $("select[name='car']").val(),
+		    pattern = /[0-9]{3}/;
 		if(pattern.test(phone)) {
 			submitForm(name, phone, car);
 		}
