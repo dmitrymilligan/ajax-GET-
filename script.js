@@ -13,6 +13,7 @@ $(function () {
 		};
 	});
 	function submitForm() {
+		console.time("getstart");
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -21,6 +22,7 @@ $(function () {
 		};
 		xhttp.open("GET", "http://jsonplaceholder.typicode.com", true);
 		xhttp.send();
+		console.timeEnd("getstart");
 	}
 
 //	function submitForm(name, phone, car) {
